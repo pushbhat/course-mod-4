@@ -15,7 +15,7 @@
     })
     .state('categories',{
       url:'/categories',
-      templateUrl:'data/categoriesViewTemplate.html',
+      templateUrl:'src/data/categoriesViewTemplate.html',
       controller:'CategoriesController as Catctrl',
       resolve:{
         items:['MenuDataService',function(MenuDataService){
