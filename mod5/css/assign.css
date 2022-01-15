@@ -1,0 +1,27 @@
+input.ng-touched.ng-valid{
+    border: 2px green solid;
+} 
+input.ng-touched.ng-invalid{
+    border: 2px red solid;
+} 
+/* .myform{
+    color:black
+} */
+/* .ng-pristine.ng-binding.ng-scope.ng-invalid.ng-invalid-required.ng-valid-email{
+    border: 15px green solid
+} */
+button:disabled{
+    background-color: black;
+}
+.mybutton{
+    color: black;
+    background-color: #f6b319;
+}
+.mybutton:disabled{
+    color: #ffffff;
+    background-color: #ffffff;
+}
+form{
+    text-align: center;
+    
+}

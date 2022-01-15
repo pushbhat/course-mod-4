@@ -1,0 +1,14 @@
+<h1 class="text-center">My Info</h1>
+<div ng-show="infoctrl.user" class="text-center" style="font-size: larger;">
+        First Name :     {{infoctrl.user.Fname}}
+        <br>
+        Last Name  :     {{infoctrl.user.Lname}}
+        <br>
+        email      :     {{infoctrl.user.email}}
+        <br>
+        Favourite  : {{infoctrl.user.fav}}
+    
+</div>
+<h3 ng-hide="infoctrl.user" class="text-center">
+    Not Signed Up Yet.<a ui-sref="public.signup"> Sign up Now!</a>
+</h3>

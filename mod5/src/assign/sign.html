@@ -1,0 +1,58 @@
+<h1 class="text-center">Sign Up</h1>
+<form  name="regform" novalidate >
+    <input type="text" name="fname" 
+         placeholder="First Name" required
+        ng-model="signup.user.Fname"
+        style="color: black;"
+    >
+    <!-- {{signup.user.name}} -->
+    <br>
+    <br>
+
+    <input type="text" name="lname" 
+         placeholder="Last Name" 
+        ng-model="signup.user.Lname"
+        style="color: black;"
+    >
+    <!-- {{signup.user.name}} -->
+    <br>
+    <br>
+
+    <input  type="email" name="email" 
+            placeholder="email" required
+            ng-model="signup.user.email"
+            style="color: black;"
+    >
+    <br>
+    <!-- {{signup.user.email}} -->
+    <span ng-if="regform.email.$invalid && regform.email.$touched">
+        Please enter vaid email: handle@domain
+    </span>
+
+    <br>
+    <input type="text" name='phone' 
+           placeholder="Phone No." required
+           ng-model='signup.user.phone'
+           style="color: black;"
+    >
+    <br>
+    <br>
+    <input type="text" name='phone' 
+           placeholder="Menu Number(item short name)" required
+           ng-model='signup.user.item'
+           style="color: black;"
+    >
+    <br>
+<!-- {{signup.user.phone}} -->
+    <br>
+    <br>
+    <button class="mybutton" 
+        name="button"
+        ng-click="signup.submit()"
+        ng-disabled="regform.$invalid">
+        Submit
+    </button>
+     <br>
+    <span ng-if="!(regform.$invalid) && signup.msg">{{signup.msg}}</span>
+    <!-- <span ng-if="!(regform.$invalid) && signup.success===false">{{signup.err}}</span> -->
+</form>
